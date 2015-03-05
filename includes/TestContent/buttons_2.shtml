@@ -1,0 +1,284 @@
+<section>
+<header>
+<h1>Buttons, links and input types</h1>
+<p>Buttons, links and input types.</p>
+</header>
+<h4>Some pointers:</h4>
+<ul>
+	<li>Make buttons look tappable/clickable</li>
+	<li>Consider weight distribution on a screen - primary actions v. secondary actions through color and size.</li>
+</ul>
+<p><i><b>NB!</b></i> "Be careful when marking up links with the button role. Buttons are expected to be triggered using the Space key, while links are expected to be triggered through the Enter key. In other words, when links are used to behave like buttons, adding role="button" alone is not sufficient. It will also be necessary to add a key event handler that listens for the Space key in order to be consistent with native buttons" - from <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role">MDN</a></p>
+<h3>When to use which type</h3>
+<ul>
+	<li>a href</li>
+	<li>button</li>
+	<li>input type</li>
+</ul>
+<h4>A HREF</h4>
+<p>A general rule of thumb here is to use this if there is a meaningful link in the href - otherwise use a button.</p>
+<p><a href="#">This is a link with default styling (color, hover state)</a></p>
+<h4>BUTTON</h4>
+<p>Button is a form element. Outside of a <i>form</i> it has no meaning.</p>
+<p>A <i>button</i> element in a <i>form</i>, by default, behaves identically to that submit input in a <i>form</i>.</p>
+<h4>INPUT TYPE (with 'button-like' functionality)</h4>
+<p>Input type allows us to specify the function of the button.</p>
+
+<table>
+<caption>Input types</caption>
+<thead>
+	<tr>
+		<th>Field type</th>
+		<th>HTML</th>
+		<th>Notes</th>
+	</tr>
+</thead>
+<tfoot>
+	<tr>
+		<th colspan="3"><i>Table from: <a href="http://diveinto.html5doctor.com/forms.html">www.diveinto.html5doctor.com</a></i></th>
+	</tr>
+</tfoot>
+<tbody>
+<tr>
+	<td>Checkbox</td>
+	<td> < input type="checkbox" ></td>
+	<td>can be toggled on or off</td>
+</tr>
+<tr>
+	<td>Radio button</td>
+	<td>< input type="radio" ></td>
+	<td>can be grouped with other inputs</td>
+</tr>
+<tr>
+	<td>Submit button</td>
+	<td>< input type="submit" ></td>
+	<td></td>
+</tr>
+
+</tbody>
+</table>
+<h3>Examples</h3>
+<table>
+<caption>Input types</caption>
+<thead>
+	<tr>
+		<th>Type</th>
+		<th>HTML</th>
+		<th>Notes</th>
+	</tr>
+</thead>
+<tfoot>
+	<tr>
+		<th colspan="3"><i>Table from: <a href="http://diveinto.html5doctor.com/forms.html">www.diveinto.html5doctor.com</a></i></th>
+	</tr>
+</tfoot>
+<tbody>
+<tr>
+	<td><input type="reset" value="Reset"></td>
+	<td>&#60;input type="reset" value="Reset (input)"&#62;</td>
+	<td></td>
+</tr>
+<tr>
+	<td><input type="button" value="Button"></td>
+	<td>&#60;input type="button" value="Button (input)"&#62;</td>
+	<td></td>
+</tr>
+<tr>
+	<td><input type="submit" value="Submit"></td>
+	<td>&#60;input type="submit" value="Submit (input)"&#62;</td>
+	<td></td>
+</tr>
+<tr>
+	<td><button type="reset" >Reset</button></td>
+	<td>&#60;button type="reset" >Reset (button)&#60;/button&#62;</td>
+	<td></td>
+</tr>
+<tr>
+	<td><button type="button" >Button</button></td>
+	<td>&#60;button type="button" >Button (button)&#60;/button&#62;</td>
+	<td></td>
+</tr>
+<tr>
+	<td><button type="submit" >Submit</button></td>
+	<td>&#60;button type="submit" >Submit&#60;/button&#62;</td>
+	<td></td>
+</tr>
+<tr>
+	<td><button>Button</button></td>
+	<td>&#60;button >This is a &#60;/button&#62;</td>
+	<td></td>
+</tr>
+<tr>
+	<td><p><a href="">This is an a href</a></p></td>
+	<td>&#60;a href="">This is an a href&#60;/a&#62;</td>
+	<td></td>
+</tr>
+<!--<tr>
+	<td><input type="image" src="http://placekitten.com/48/49" alt="Image (input)"></td>
+	<td>&#60;input type="image" src="http://placekitten.com/48/48" alt="Image (input)"&#62;
+	</td>
+	<td></td>
+</tr>-->
+</tbody>
+</table>
+
+<h3>Varied sizes</h3>
+<ul>
+	<li>small</li>
+	<li>default</li>
+	<li>large</li>
+</ul>
+<p><i>NB! Uses classes.</i></p>
+
+<h4>Small</h4>
+<p>Sometimes lesser importance or lack of vertical space means that a button must be made smaller. If the class 'small' is applied to a button then it will render small. If the class 'small' is applied to a container then it's contents will render small.</p>
+<p>Example:</p>
+<div class="example">
+<button class="small">This is a small button</button>
+</div>
+<h4>Default</h4>
+<p>Default size is set without using classes.</p>
+<p>Example:</p>
+<div class="example">
+<button>This is a default button</button>
+</div>
+<h4>Large</h4>
+<p>Class 'large' affects the element(s) similar to 'small' above.</p>
+<p>Example:</p>
+<div class="example">
+<button class="large">1234</button>
+<button class="large border1px">These</button>
+<button class="large border2px">are</button>
+<button class="large border4px">large</button>
+</div>
+<h4>Emphasis</h4>
+<p>Use bold text to emphasise a button.</p>
+<div class="example"><button class="bold">This is a default button with class 'bold'</button></div>
+<h4>Disabled</h4>
+<p>Used in conjunction with the pseudo-class ':disabled'. The opacity of disabled elements is set to 50%;</p>
+<h5>When to use</h5>
+<p>When a function is unavailable for the user based on the current state of the system but can potentially be changed then a disabled state on buttons can be implemented. The disabled state gives a visual clue to the user that they can make decisions which will enable the button/input type. However, if there is no possible situation/state in which the user will be able to enable the button/input then it should never be shown.</p>
+<input type="button" value="A disabled button :(" disabled />
+<br /><br />
+<div><code>input[type="button"]:disabled { <br />background: #000;<br />color:#999;<br />opacity:0.5; <br />}</code></div>
+<br /><br />
+<h3>Varied borders</h3>
+<p><i>NB! There is a Sass function in the buttons.scss file which works out the necessary padding:border ratios.</i></p>
+<code>
+$base: 16px;
+<br />
+<br />@function bordered-button-padding ($border-thickness){
+<br />	 @return 1 - ($border-thickness / $base) + em;
+<br />}
+<br />
+<br />@function small-bordered-button-padding ($border-thickness){
+<br />	 @return 0.5 - ($border-thickness / $base) + em;
+<br />}
+<br />
+<br />@function large-bordered-button-padding ($border-thickness){
+<br />	 @return 2 - ($border-thickness / $base) + em;
+<br />}
+</code>
+<h5>Usage</h5>
+<code>
+<br />.border1px {
+<br />	border: 1px solid $darkGrey;
+<br />	padding: bordered-button-padding(1px) /*0.9375em*/;
+<br />}
+</code>
+<p>In order to retain the baseline rhythm use these measurements for borders:</p>
+<ul>
+<li>no border</li>
+<li>1px border</li>
+<li>2px border</li>
+<li>4px border</li>
+</ul>
+<p>When borders are added to buttons, the padding and/or the font size needs to be adjusted in order to compensate for the border thickness. Here is how the selectors look:</p>
+<div>
+<code>.border1px {
+<br />border: 1px solid #bbb; &nbsp;<span style="color: #666;"><i>1 pixel border</i></span>
+<br />padding: 0.9375em; &nbsp;<span style="color: #666;"><i>1px/16px = 0.0625. Remove this from padding.</i></span>
+<br />}
+<br />.border2px {
+<br />border: 2px solid #bbb; &nbsp;<span style="color: #666;"><i>2 pixel border</i></span>
+<br />padding: 0.875em; &nbsp;<span style="color: #666;"><i>2px/16px = 0.125. Remove this from padding.</i></span>
+<br />}
+<br />.border4px {
+<br />border: 4px solid #000;
+<br />padding: 0.75em;
+<br />}
+</code>
+</div>
+<br />
+<br />
+
+<div class="example vertspace"><!-- vertspace class is only for this demo page -->
+<button>0px border</button>
+<button class="border1px">1px border</button>
+<button class="border2px">2px border</button>
+<button class="border4px">4px border</button>
+<button class="border8px">8px border</button>
+
+<button class="largeBorder1px">1px border</button>
+<button class="largeBorder2px">2px border</button>
+<button class="largeBorder4px">4px border</button>
+<button class="largeBorder8px">8px border</button>
+</div>
+
+<h3>Varied groupings</h3>
+<p><i>NB! Sometimes whitespace and carriage returns in the markup will result in spaces between elements. Also, vertical spacing between buttons should be set on the groups' containing element.</i></p>
+<ul>
+	<li>row of buttons</li>
+	<li>column of buttons</li>
+	<li>tabs</li>
+	<li>pills</li>
+</ul>
+
+<h4>Row of buttons</h4>
+<p>Placing buttons on a horizontal row. There is no need to add extra classes here as they are inline by default.</p>
+
+<div class="example vertspace"><!-- vertspace class is only for this demo page -->
+<input type="button" name="Button test" value="Input type button" /><input type="button" name="Button test" value="Input type button" /><input type="button" name="Button test" value="Input type button" /><button>A button</button><button>A button</button>
+</div>
+
+<h3>Buttons with icons</h3>
+<p style="display:inline" class="toolkit">NB! Doesn't work for <xmp style="display:inline"><input type="button"></xmp></p>
+<p><a href="http://icomoon.io">Icomoon</a> is a free service which creates icon fonts. The icon glyphs can be styled via CSS. They are light, scalable, fast (saved as a font, they can be loaded with one HTTP request) and accessible (screen reader accessible).</p>
+<div class="example">
+<button><span class="icon-compass"></span>Glyph icon button</button> 
+<button><span class="icon-clock2"></span>Glyph icon button</button>
+<button><span class="icon-location"></span>Glyph icon button</button>
+</div>
+<h3>Tabs</h3>
+<div class="example">
+<button role="tab">Tab 1</button><button role="tab" class="active">Tab 2 - a slightly longer tab</button><button role="tab">Tab three</button><button role="tab">Tab 4</button><button role="tab">Tab five</button>
+<div style="width: 80%;height: 5em;background-color: #fff;padding: 2em;">This is a container below the tabs</div>
+</div>
+<h3>Variations</h3>
+<p>Shadows, rounded corners, circles etc... (alternatives.css) </p>
+
+<header>
+	<h3>Molecules</h3>
+	<p>Classless elements grouped or affected by their parent</p>
+</header>
+	<h4>Pill-grouped buttons</h4>
+	<p>When a group of buttons are in some way related and can be grouped together they can be wrapped in a div with the class '.pillGroup'. This adds styling to some of the elements vis pseudo-selectors such as first-child and last-child.</p>
+	<p><b>NB!</b> Use media queries to change the structure or look of pill-group buttons in situations where the group breaks as a result of not enough horizontal apce.</p>
+	<div class="example">
+	<div class="pillGroup">
+	<button>Button 1</button><button>Button 2</button><button>Button 3</button>
+	</div>
+	</div>
+	
+	<h4>Column of buttons</h4>
+	<p>The following stack of buttons are wrapped in a div which has class '.block' (denoted here in yellow). The 'block' class also has an asterisk selector '*' which makes it's contents display as blocks.</p>
+	<div class="example">
+	<div class="block vertspace"><!-- vertspace class is only for this demo page -->
+	<input type="button" name="Button test" value="Input type button" /><input type="button" name="Button test" value="Input type button" />
+	<button>A button</button><button>A button</button><button>A button</button>
+	</div>
+	</div>
+
+
+
+</section>

@@ -1,0 +1,34 @@
+<section>
+<header><h1>Grid</h1><p>An invisible framework for aiding positioning and layout of UI elements.</p></header>
+<p>For these guidelines we will not restrict ourselves to one particular grid system. Instead we will maintain our metrics rules and use whichever method of grid construction is most appropriate to the content and context.</p>
+<h4>Responsiveness</h4>
+<p>Responsive design means passing the same HTML to all devices and using a combination of: <br />
+<ul>
+	<li>fluid images</li>
+	<li>media queries</li>
+	<li>flexible grid</li>
+</ul>
+</p>
+<p>There are two main types of grid systems used in HTML layouts: <br />
+<ol>
+	<li>layouts using CSS3's flexbox</li>
+	<li>layouts using floats and clears</li>
+</ol>
+<h4>Metrics</h4>
+<p>The measurement of grid sections/columns can be:</p>
+<ul>
+	<li>percentage-based column widths</li>
+	<li>em-based column widths</li>
+	<li>fixed width columns</li>
+</ul>
+<blockquote>
+The main idea behind the flex layout is to give the container the ability to alter its items' width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space, or shrinks them to prevent overflow
+</blockquote>
+<p>- <a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS-tricks.com</a></p>
+
+ </p>
+<h4>Metrics</h4>
+<p>In order to maintain simplicity we should build our grid around our 'em' unit and attempt to size elements and properties (margins, paddings etc.), in full or half ems. This will give us a possible grid consisting of small 8x8 pixel squares covering the entire viewable area. The advantage of this is that we can set general rules about certain elements - how much margin and padding they should have, their font-size, their distance to other elements</p>
+</section>
+
+

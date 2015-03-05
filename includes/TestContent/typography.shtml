@@ -1,0 +1,81 @@
+<section>
+<header><h1>Typography</h1><p>Fonts, font weights, readability</p></header>
+<p>As yet (jan 2015), a particular font has not been specified. However, the metrics have been establish with a sans-serif font in mind.</p>
+<div class="example">
+<div class="blue">
+	<h1>This is H1 header</h1>
+	<h2>This is H2 header</h2>
+	<h3>This is H3 header</h3>
+	<h4>This is H4 header</h4>
+</div>
+<!--<h5>This is H5 header</h5>-->
+</div>
+<h4>Header tag</h4>
+<p>Wrap headers in '< header >' tags as this will allow for sub-header/supportive text to be added to the header. Sub-header text can have a different appearence than main paragraph text.</p>
+<div class="example">
+<header>
+<h1>This is the main heading h1</h1>
+<p>This is the sub-heading text</p>
+</header>
+<header>
+<h2>This is the main heading h2</h2>
+<p>This is the sub-heading text</p>
+</header>
+<header>
+<h3>This is the main heading h3</h3>
+<p>This is the sub-heading text</p>
+</header>
+<header>
+<h4>This is the main heading h4</h4>
+<p>This is the sub-heading text</p>
+</header>
+</div>
+<p>Try and keep styles down to a minimum - some tight rules which are easy to follow.</p>
+<h4>Readability</h4>
+<p>Make sure that text has enough contrast between itself and it's background. Use one of the tools in the '<a href="#tools">Tools</a>' section of this document.</p>
+<h4>Paragraph</h4>
+<p>Do not allow line lengths to exceed 75 characters.</p>
+
+<h4>Lists</h4>
+<p>List items start with lowercase letters and never end with a full stop.</p>
+<h4>Ordered lists</h4>
+<ol>
+    <li>list item 1</li>
+    <li>list item 1
+        <ol>
+            <li>list item 2</li>
+            <li>list item 2
+                <ol>
+                    <li>list item 3</li>
+                    <li>list item 3</li>
+                </ol>
+            </li>
+            <li>list item 2</li>
+            <li>list item 2</li>
+        </ol>
+    </li>
+    <li>list item 1</li>
+    <li>list item 1</li>
+</ol> 
+<h4>Unordered (+ ordered)</h4>
+<ul>
+    <li>list item 1</li>
+    <li>list item 1
+        <ul>
+            <li>list item 2</li>
+            <li>list item 2
+                <ol>
+                    <li>list item 3</li>
+                    <li>list item 3</li>
+                </ol>
+            </li>
+            <li>list item 2</li>
+            <li>list item 2</li>
+        </ul>
+    </li>
+    <li>list item 1</li>
+    <li>list item 1</li>
+</ul> 
+
+<p>NB: Offline > not all of what we build will be viewed with open access to the internet, therefore we should always be providing good fallback options when applicable.</p>
+</section>

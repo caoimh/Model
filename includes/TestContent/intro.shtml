@@ -1,0 +1,23 @@
+<section>
+<header><h1>HTML / CSS Guidelines</h1><p>HTML bootstrap with guides and good practices</p></header>
+<!--<p>Intro with a skip button.</p>
+<p>Menu - table of contents using columns and &lt;details&gt;</p>-->
+<p>The purpose of this document is to provide a visual guide to a basic set of guidelines for building browser-based application interfaces.</p>
+<p>This document is meant to be used in conjunction with the <b>Graphic Design Guidelines</b> and the <b>Good Practices Guidelines</b></p>
+<!--<p>Every HTML element will be styled with a default style and remain <b>classless</b>, making it easy to drop it into any HTML document and to know that it will behave as planned.</p>-->
+<p>It is intended to provide a framework for building structurally correct documents with minimal use of classes for styling. An application built with the basic CSS from this will position and space elements correctly. </p>
+<p>There are many other guides available as well as tools to aid us such as color contrast algorithims, icon builders, color palette generators, motion (animation) generators etc. See list at end of document.</p>
+<h2>Principles</h2>
+<p>(In no particular order)</p>
+<ul>
+	<li>standards compliancy (<a href="http://www.w3.org/">W3C</a>, <a href="http://www.w3.org/TR/WCAG20/">WCAG</a>)</li>
+	<li>inclusive - build for everyone</li>
+	<li>semantics - semantic implementation of code</li>
+	<li>progressive Enhancement - make sure it works everywhere before applying visual design / special effects (animations etc.). <a href="http://en.wikipedia.org/wiki/Progressive_enhancement">Link</a></li>
+	<li>modular - both HTML(Atomic principles) and CSS (SASS) for ease of finding / sharing / maintaining</li>
+	<li>agnosticism - be platform/browser independant</li>
+	<li>open - open for enhancement, amendment, evolution</li>
+	<li>classless - avoid speccifing classes at initial stage of projects</li>
+</ul>
+</p>
+</section>

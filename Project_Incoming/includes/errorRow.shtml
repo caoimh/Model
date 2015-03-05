@@ -1,0 +1,8 @@
+<!-- ERROR ROW -->
+<tr class="alert alert-danger" role="alert">
+ <td colspan="4">
+ <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+ <span class="sr-only">Error:</span>
+ Enter a valid email address
+ </td>
+</tr>

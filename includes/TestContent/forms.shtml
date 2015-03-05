@@ -1,0 +1,196 @@
+<header>
+	<h1>Forms</h1>
+	<p>Fieldsets, fields, labels, buttons, input types</p>
+</header>
+<!--<p>Dependancies:</p>-->
+<!--<ul  >
+	<li><a href="">style.css</a></li>
+	<li><a href="">forms.css</a></li>
+</ul>-->
+<h3>Principles</h3>
+<p>Keep forms as simple as possible. <a href="gov.uk">Gov.uk</a> has a good list of guidelines regarding forms. These are duplicated here:</p>
+<p>
+<h4>Optional and mandatory fields</h4>
+<ul>
+	<li>only ask for the information you absolutely need</li>
+	<li>if you do ask for optional information, mark the labels of optional fields with '(optional)'</li>
+	<li>don't mark mandatory fields with asterisks</li>
+</ul>
+<h4>Fieldsets and legends</h4>
+<p>Use fieldsets to group form elements which are related. Use legends to describe the fieldset.</p>
+<h4>Focus</h4>
+<p>Provide a colored border when focusing on an input field.</p>
+<div class="example">
+<label for="">Enter name below:</label>
+<input type="text" />
+</div>
+<h4>Labels</h4>
+<ul>
+<li>all form fields should be given labels</li>
+	<li>don't hide labels, unless the surrounding context makes them unnecessary</li>
+	<li>labels should be aligned above their fields</li>
+	<li>label text should be short, direct and in sentence case</li>
+	<li>avoid colons at the end of labels</li>
+	<li>labels should be associated with form fields using the <i>'for'</i> attribute</li>
+</ul>
+<h4>Widths</h4>
+<p>Make field widths proportional to the input they take. Ensure that users can enter the information they need at smaller screen sizes.
+Snap form fields to 100% width at smaller screen sizes.
+</p>
+<h4>Evaluate best input type for the context</h4>
+<p>Take for example steppers ( < input type="number" min="0" max="10" value="5" > ), which allow users to tap '-' or '+' to control the number input. These can be used instead of selects (dropdowns) when the context requires a simple increase or decrease in a number. They are especially beneficial when used on mobile devices which would otherwise launch a native scrollwheel or similar - requiring many more taps.</p>
+<h4>Hint texts</h4>
+<p>Hint texts (supportive text) should always be visible <b>NOT</b> as placeholders which will dissappear on :focus. Hint texts should be placed between the label and the form element.</p>
+<div class="example">
+<label>Email
+<span>Enter your work email adress below</span>
+<input type="email">
+</label>
+</div>
+<!--<h4>Error handling</h4>
+<h4></h4>-->
+</p>
+
+<h3>Input types</h3>
+<table>
+<caption>Input types</caption>
+<thead>
+	<tr>
+		<th>View</th>
+		<th>HTML</th>
+	</tr>
+</thead>
+<tfoot>
+	<tr>
+		<th>View</th>
+		<th>HTML</th>
+	</tr>
+</tfoot>
+<tbody>
+<tr>	
+	<td><label>Password<input type="password" value="password"></td>
+	<td>< input type="password" ></td>	
+</tr>
+<tr>	
+	<td><label>Search<input type="search"></label></td>
+	<td>< input type="search" ></td>	
+</tr>
+<tr>	
+	<td><label>Url<input type="url" placeholder="http://"></label></td>
+	<td>< input type="url" placeholder="http:// ></td>	
+</tr>
+<tr>	
+	<td><label>Tel<input type="tel"></label></td>
+	<td>< input type="tel" ></td>	
+</tr>
+
+<tr>	
+	<td><label>File<input type="file"></label></td>
+	<td>< input type="file" ></td>	
+</tr>
+<tr>	
+	<td><label>Plain text<input type="text" /></label></td>
+	<td>< input type="text" ></td>	
+</tr>
+<tr>	
+	<td><label>Plain text REQUIRED<input type="text" required /></label></td>
+	<td>< input type="text" required ></td>	
+</tr>
+<tr>	
+	<td><label><input type="checkbox"> Checkbox</label></td>
+	<td> < input type="checkbox" > <br />NB! to stack a row and display as block you can either place in a list (ul) or a div with class 'block.'</td>	
+</tr>
+<tr>
+	<td><label><input type="radio" name""> Radio</label></td>
+	<td>< input type="radio" ></td>
+</tr>
+<tr>
+	<td><label>Textarea<textarea id="" cols="30" rows="5" >Textarea text</textarea></label> </td>
+	<td>< textarea id="t" cols="30" rows="5" >Textarea text< /textarea ></td>
+</tr>
+<tr>	
+	<td><label>Number <input type="number" min="0" max="10" value="5"></label></td>
+	<td>< input type="number" min="0" max="10" value="5" ></td>	
+</tr>
+
+<tr>	
+	<td><label>Date input<input type="date" id="" value="1970-01-01"></label></td>
+	<td>< input type="date" value="1970-01-01" ></td>	
+</tr>
+<tr>	
+	<td><label>Month input<input type="month" id="idm" value="1970-01"></label></td>
+	<td>< input type="month" value="1970-01" ></td>	
+</tr>
+<tr>	
+	<td><label for="idw">Week input<input type="week" id="" value="1970-W01"></label> </td>
+	<td>< input type="week" value="1970-W01" ></td>	
+</tr>
+<tr>	
+	<td><label>Time<input type="time" id="" value="T00:00:00Z"></label></td>
+	<td>< input type="time" ></td>	
+</tr>
+<tr>	
+	<td><label>Datetime input <input type="datetime" id="idt" value="1970-01-01T00:00:00Z"></label></td>
+	<td>< input type="datetime" value="1970-01-01T00:00:00Z" ></td>	
+</tr>
+<tr>	
+	<td><label>Datetime-local input<input type="datetime-local" id="" value="1970-01-01T00:00"></label></td>
+	<td>< input type="datetime-local" value="1970-01-01T00:00" ></td>	
+</tr>
+<tr>	
+	<td><label>Color input <input type="color" id="" value="#000000"></label></td>
+	<td>< input type="color" value="#000000" ></td>	
+</tr>
+<tr>	
+	<td><label>Range<input type="range" id="" value="10"></label> </td>
+	<td>< input type="range" value="10" ></td>	
+</tr>
+
+<tr>	
+	<td><label>Email<input type="email" autocomplete="off" autocorrect="off"></label></td>
+	<td>< input type="email" autocomplete="off" autocorrect="off" ></td>	
+</tr>
+<tr>	
+	<td><label>Select <br /><select id="s"><option>Option 01</option><option>Option 02</option></select></label> </td>
+	<td>< select > < option >…</td>	
+</tr>
+</tbody>
+</table>
+<h4>Examples of grouping radio and checkbox inputs:</h4>
+<div class="example">
+
+<fieldset><legend>Inline row</legend>
+<label><input type="checkbox"> Checkbox</label>
+<label><input type="checkbox"> Checkbox</label>
+<label><input type="checkbox"> Checkbox</label>
+</fieldset>
+<fieldset><legend>Inline row</legend>
+<label><input type="radio" name""> Radio</label>
+<label><input type="radio" name""> Radio</label>
+<label><input type="radio" name""> Radio</label>
+</fieldset>
+
+<fieldset>
+<legend>Placed within a list</legend>
+<ul>
+<li><label><input type="checkbox"> Checkbox</label></li>
+<li><label><input type="checkbox"> Checkbox</label></li>
+<li><label><input type="checkbox"> Checkbox</label></li>
+<li><label><input type="radio" name""> Radio</label></li>
+<li><label><input type="radio" name""> Radio</label></li>
+<li><label><input type="radio" name""> Radio</label></li>
+</ul>
+</fieldset>
+
+<fieldset>
+<legend>Placed within a div with class 'block'</legend>
+<div class="block">
+<label><input type="checkbox"> Checkbox</label>
+<label><input type="checkbox"> Checkbox</label>
+<label><input type="checkbox"> Checkbox</label>
+<label><input type="radio" name""> Radio</label>
+<label><input type="radio" name""> Radio</label>
+<label><input type="radio" name""> Radio</label>
+</div>
+</fieldset>
+</div>

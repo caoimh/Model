@@ -1,0 +1,22 @@
+<section class="group">
+	<header>
+		<h1>Colors</h1>
+		<p>Use of....</p>
+	</header>	
+	<div class="swatch superLightGrey">&nbsp;</div>
+	<div class="swatch lightGrey">&nbsp;</div>
+	<div class="swatch mediumGrey">&nbsp;</div>
+	<div class="swatch darkGrey">&nbsp;</div>
+	<div class="swatch superDarkGrey">&nbsp;</div>
+	<div class="swatch black">&nbsp;</div>
+	<div class="swatch redPink">&nbsp;</div>
+	<div class="swatch pink">&nbsp;</div>
+	<div class="swatch pinkPurple">&nbsp;</div>
+	
+	<div class="swatch purple">&nbsp;</div>
+	<!--<div class="swatch redPink">&nbsp;</div>-->
+	<div class="swatch blue">&nbsp;</div>
+	<div class="swatch green">&nbsp;</div>
+	<div class="swatch yellow">&nbsp;</div>
+	
+</section>

@@ -1,0 +1,9 @@
+<section>
+<header><h1>Atomic Principles</h1><p>Principles around developing a component-based system for fast development and prototyping</p></header>
+<p>On small screens (phones and small tablets), there is often very little room for traditional layout patterns such as two-, three- or four-columns floated beside each other. Instead, the content is usually laid out in a list style - sections or elements stacked on top of one another requiring the user to scroll vertically to gain access to the content. Coupled with this are often horizontally or vertically sliding menu panels.</p>
+<h4>Affordances</h4>
+<p>We will start with out base units with examples of how our reasoning will affect the composition of GUI elements. How they will affect each other.</p>
+<p>There will be a trickle-down effect - start with the building blocks - the units, then the atoms based on these units, then the molecules built from the atoms, then the system.</p>
+<p>The applications, interfaces, digital services we are making are systems. They are made of components which are positioned relative to their function and importance.</p>
+<p>Building blocks as units and building blocks as organisms (HTML5 bootstrap for example).</p>
+</section>

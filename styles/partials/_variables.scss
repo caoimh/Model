@@ -1,0 +1,172 @@
+/* METRICS */
+
+$baseUnit : 1em;
+
+/* COLORS */
+
+
+$white : #fff;
+
+$yellow : #ECFF1E;
+
+$darkYellow: #DFB403;
+
+$green : #65c34a;
+
+$darkGreen: #50A62F;
+
+$red : #DD4330;
+
+$darkRed : #b11800;
+
+$grey : #f5f5f5;
+
+$superLightGrey : #f5f5f5;
+
+$lightGrey : #e1e2e3;
+
+$mediumGrey : #939598;
+
+$darkGrey : #555;
+
+$superDarkGrey : #333;
+
+$black : #000;
+
+$pink : #e11281;
+
+$salmon	: #facfcc;
+
+$redPink : #f2463c;
+
+$pinkPurple	: #bd10e0;
+
+$purple	: #9013fe;
+
+$blue : #0C73E9;
+
+
+/*-- Function for setting text color on dark/light backgrounds --*/
+
+@function set-text-color($col) {
+  @if (lightness($col) > 50) {
+    @return #fff;
+  } @else {
+    @return #000;
+  }
+}
+
+
+.redPink {
+	background-color: $redPink;
+	color : set-text-color($redPink);
+	}
+
+
+.pinkPurple {
+	background-color: $pinkPurple;
+	color : set-text-color($pinkPurple);
+	}
+
+
+.purple {
+	background-color: $purple;
+	color : set-text-color($purple);
+	}
+
+
+.white {
+	background-color: $white;
+	border-color: $lightGrey;
+	color : #333;
+	}
+
+
+.yellow {
+	background-color: $yellow;
+	border-color: $darkYellow;
+	color : set-text-color($yellow);
+	}
+
+.yellowText {
+  color : $yellow;
+  }
+  
+.darkYellowText {
+  color : $darkYellow;
+  }
+
+.green {
+	background-color: $green;
+	border-color: $darkGreen;
+	color : set-text-color($green);
+	}
+	
+.darkGreen {
+	background-color: $darkGreen;
+	border-color: $black;
+	color : set-text-color($darkGreen);
+	}
+
+
+.greenText {
+	color: $green;}
+
+.red {
+	background-color: $red;
+	border-color: $darkRed;}
+
+.redText {
+	color: $red;}
+
+.grey {
+	background-color: $grey;}
+	
+
+.superLightGrey {
+	background-color: $superLightGrey;}
+
+
+.lightGrey {
+	background-color: $lightGrey;}
+
+.lightGreyText {
+  color : $lightGrey;
+}
+
+.mediumGrey {
+  background-color: $mediumGrey;
+}
+
+.mediumGreyText {
+  color: $mediumGrey;
+}
+
+
+.darkGrey {
+	background-color: $darkGrey;
+	color:#fff;
+	}	
+	
+.superDarkGrey {
+		background-color: $superDarkGrey;}
+	
+.black {
+		background-color: $black;}
+
+.pink {
+	background-color: $pink;}
+
+
+.salmon {background-color: $salmon;}
+
+
+.blue {
+  background-color: $blue;
+  border-color: #0a61c5;
+  color : set-text-color($blue);
+  }
+  
+ .blueText {
+   color : $blue;
+   }

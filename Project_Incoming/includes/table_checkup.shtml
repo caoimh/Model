@@ -1,0 +1,18 @@
+<table class="demo">
+    <caption>Checkup</caption>
+    <thead>
+        <tr>
+<th>th</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+<th>th</th>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+<td>Hello this is the details</td>
+        </tr>
+    </tbody>
+</table>

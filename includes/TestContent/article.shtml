@@ -1,0 +1,56 @@
+<div class="example">
+	<article>
+	<header>
+		<h1>A Semantic Article</h1>
+		<address>Address: somewhere, world</address>
+	</header>
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.</p>
+	<input type="reset" value="Reset (input)">				
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.</p>
+	<h3>ordered list</h3>
+	<ol>
+		<li>list item 1</li>
+		<li>list item 1
+			<ol>
+				<li>list item 2</li>
+				<li>list item 2
+					<ol>
+						<li>list item 3</li>
+						<li>list item 3</li>
+					</ol>
+				</li>
+				<li>list item 2</li>
+				<li>list item 2</li>
+			</ol>
+		</li>
+		<li>list item 1</li>
+		<li>list item 1</li>
+	</ol> 
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.</p>
+	<input type="reset" value="Reset (input)">	
+		   
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.</p>
+	<h3>description list</h3>
+	<dl>
+		<dt>Description name</dt>
+		<dd>Description value</dd>
+		<dt>Description name</dt>
+		<dd>Description value</dd>
+		<dd>Description value</dd>
+		<dt>Description name</dt>
+		<dt>Description name</dt>
+		<dd>Description value</dd>
+	</dl>
+	<h3>figure</h3>
+	<figure>
+		<img src="http://placehold.it/350x158" alt="">
+		<figcaption>Figcaption content</figcaption>
+	</figure>
+	<!--<p>Using a 'small' tag around the source of the quote with automatically add an em dash before it (pseudo element).</p>-->
+	<blockquote>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+	</blockquote>
+	<!--<small> - Dr. Julius Hibbert</small>-->
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.</p>
+	</article>
+</div>

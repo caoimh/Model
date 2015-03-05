@@ -1,0 +1,60 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+e.src='//www.google-analytics.com/analytics.js';
+r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+
+
+<script type="text/javascript">
+/* Screen width printer */
+/* Author: KM */
+
+
+
+$(document).ready(function($) {
+
+	var width = $(window).width();
+	$(window).resize(function(){
+		if($(this).width() != width){
+			width = $(this).width();
+			converted = parseInt(width / 16);  
+        	}
+        $( "#sizer" ).text("window width is" + " " + converted + " ems" + " " + width + " pixels");
+      });
+      
+      //Show Hide
+      $('.mapBox').hide();
+      $('.justHide').each(function(){
+      	$(this).bind("click", 
+      	function(k){
+      	var $this = $(this);
+      	k.preventDefault();
+      	$(this).parent('div').slideToggle('fast', function() {
+      		});      	
+      	})
+      });
+      $('button.showHide').each(function(){
+      	$(this).bind (
+      	"click",
+      	function(e){
+      	var $this = $(this);
+      	e.preventDefault();	
+      	$(this).parents('tr').next('tr').find('td div.mapBox').slideToggle('fast', function() {
+      // Animation complete.
+      	});
+      //Give this handle a 'open/closed class'
+      //$(this).toggleClass('openMe');
+      	});
+      });
+	});
+</script>

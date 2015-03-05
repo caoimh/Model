@@ -1,0 +1,202 @@
+/*-- GRID BACKGROUND --*/
+
+body {
+  background-image: url('../images/8px.png')!important;
+}
+
+/*-- EXAMPLE BOX --*/
+.example {
+  padding: 2em 2em;
+  background-color: #fff;
+  border: 0.5em solid #ccc;
+  margin-bottom: 3em; 
+  }
+
+.exampleLabel {
+  padding: 1em;
+  background-color: #ccc; }
+
+.vertspace * {
+  margin-bottom: 0.5em; }
+
+/*# sourceMappingURL=guide.css.map */
+
+section{
+	max-width: 50em;
+	margin: auto;
+	@include paddingTRBL(2);
+	margin-bottom : 0px;
+/*-- Extend the clearfix rule from helpers.scss --*/
+	@extend %clearfix; 
+}
+
+
+.boxy {
+  background-color : $pink;
+  @include paddify(2em);
+  width : 30em;
+  height : 30em;
+}
+
+table.incoming {
+  border: 4px solid #555;
+}
+
+table.incoming tr td {
+ @include paddingTRBL(0.5);
+ padding-top: 0.4375em;
+}
+
+table.incoming tr td table,
+table.incoming tr td table td {
+ border : none!important;
+}
+
+table.incoming tr td table tr td:first-child {
+  color : $mediumGrey;
+}
+
+table.incoming tr td table tr td{
+  padding : 0.25em 0.5em;
+}
+
+
+table.incoming button {
+  margin-bottom:0.0em;
+ 
+}
+
+/*
+table.incoming button:last-child {
+  margin-bottom:0.0em;
+}
+*/ /*MQ narrow - when the buttons stack*/
+/*-- margin-bottom:0.5em; --*/
+
+tfoot {
+  display : none;
+}
+
+thead th {
+  border-top : none;
+}
+
+thead th {
+  background-color : $darkGrey;
+  color : $white; 
+  font-weight : normal;
+}
+
+td button {
+  margin-right : 0.5em;
+}
+
+
+.pc50 {
+	width: 50%;
+	float: left;}
+
+.floatLeft {
+	float: left;}
+
+.floatRight {
+	float: right;}
+	
+.cols2 {
+	  -webkit-column-count: 2;
+	     -moz-column-count: 2;
+	          column-count: 2;
+	  -webkit-column-width: 50%;
+	     -moz-column-width: 50%;
+	          column-width: 50%;
+	  -webkit-column-gap: 4em;
+	     -moz-column-gap: 4em;
+	          column-gap: 4em;
+}
+
+
+.borderedBox {
+  padding: 1em 1em 1em 1em;
+}
+
+
+.borderedBox p {
+margin-bottom: 0.5em;
+padding:0px;
+}
+
+.borderedBox p:last-child {
+margin-bottom:1em;
+}
+
+
+ul.inlineRadioGroup {
+	list-style : none;
+	
+	}
+	
+ul.inlineRadioGroup li {
+	display : inline-block;
+	float : left;
+	background-color : $mediumGrey;	
+	margin : 0px;
+	padding:0px;
+	@extend %clearfix;
+}
+
+ul.inlineRadioGroup li input[type="radio"] {
+  float : left;
+  
+  display : inline-block;
+  position : relative;
+  top: 0.65em;
+  	left:0.5em;
+  	padding-right : 0.5em;
+}
+
+ul.inlineRadioGroup li label {
+  float : left;
+    background-color : $grey;
+    padding : 0.5em 1em 0.5em 2.0em;
+    /*margin-left:-2em;*/
+    margin : 0px;
+    margin-left:-1em;
+}
+
+ul.inlineRadioGroup li input[type="radio"]:checked + label {
+background-color : $green;
+}
+
+
+@media (max-width: 780px) {
+  table.incoming button {
+    margin-bottom:0.5em;
+     min-width:7.5em;
+  }
+  
+  td {
+  font-size : 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+html,
+body,
+
+
+  table.incoming tr td table tr td:first-child {
+    display : none;
+  }
+  
+  [class^="icon-"], 
+  [class*="icon-"] {
+    display : none;
+  }
+  
+}
+
+
+
+
+

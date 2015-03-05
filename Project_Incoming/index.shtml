@@ -1,0 +1,96 @@
+<!--#include virtual="../includes/htmlstart.shtml" -->
+<!--#include virtual="../includes/headstart.shtml" -->
+<!--#include virtual="../includes/meta.shtml" -->
+<!--#include virtual="../includes/title.shtml" -->
+<link rel="stylesheet" href="../styles/main.css">
+<style type="text/css">
+ul.inlineRadioGroup {
+	list-style : none;
+	
+	}
+	
+ul.inlineRadioGroup li {
+	display : inline-block;
+	float : left;
+	background-color : $mediumGrey;	
+	margin : 0px;
+	padding:0px;
+	@extend %clearfix;
+}
+
+ul.inlineRadioGroup li input[type="radio"] {
+  float : left;
+  
+  display : inline-block;
+  position : relative;
+  top: 0.65em;
+  	left:0.5em;
+  	padding-right : 0.5em;
+}
+
+ul.inlineRadioGroup li label {
+  float : left;
+    background-color : $grey;
+    padding : 0.5em 1em 0.5em 2.0em;
+    /*margin-left:-2em;*/
+    margin : 0px;
+    margin-left:-1em;
+}
+
+ul.inlineRadioGroup li input[type="radio"]:checked + label {
+background-color : $green;
+}
+
+</style>
+<!--#include virtual="../includes/headscripts.shtml" -->
+<!--#include virtual="../includes/headstop.shtml" -->
+<!--#include virtual="../includes/bodystart.shtml" -->
+<!--#include virtual="../includes/browsehappy.shtml" -->
+<section>
+<form action="post">
+<!--
+<radiogroup class="sortGroup">
+<label for="Red"><input type="radio" id="Red" name="sorter" />Red</label>
+<label for="Green"><input type="radio" id="Green" name="sorter" />Green</label>
+</radiogroup>-->
+
+<ul class="inlineRadioGroup">
+	<li><input type="radio" id="Red" name="sorter" checked /><label for="Red">Sist først</label></li>
+	<li><input type="radio" id="Green" name="sorter" /><label for="Green">Først sist</label></li>
+</ul>
+
+
+</form>
+</section>
+<section><h4>Patruljer</h4>
+<div class="cols2 borderedBox" style="background-color: #ddd;">
+  <p><span class="icon-dot redText"></span>L07</p>
+  <p><span class="icon-dot greenText"></span>H01</p>
+  <p><span class="icon-dot darkYellowText"></span>H02</p>
+  <p><span class="icon-dot redText"></span>H03</p>
+  <p><span class="icon-dot redText"></span>S30</p>
+  <p><span class="icon-dot redText"></span>L07</p>
+  <p><span class="icon-dot redText"></span>H01</p>
+  <p><span class="icon-dot redText"></span>H02</p>
+  <p><span class="icon-dot redText"></span>H03</p>
+  <p><span class="icon-dot redText"></span>S30</p>
+</div>
+</section>
+<section>
+<table>
+	<tr>
+		<td style="background: transparent;border: 1px solid #333;padding-top: 0.75em;">
+		<span class="icon-dot greenText"></span>Aktiv
+		
+		</td>
+	</tr>
+</table>
+<p><span class="icon-dot redText"></span>S30</p>
+<br />
+<button class="darkGrey"><span class="icon-dot redText"></span>Statusmelding</button>
+</section>
+<section><!--#include virtual="includes/table_incoming_v3.shtml" --></section>
+<section><!-- #include virtual="includes/table_incoming_v2.shtml" --></section>
+<!--#include virtual="../includes/basescripts.shtml" -->
+<!--#include virtual="../includes/bodystop.shtml" -->
+<!--#include virtual="../includes/htmlstop.shtml" -->

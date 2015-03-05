@@ -1,0 +1,16 @@
+
+<!-- -->
+		<tr>
+			<td><span class="icon-dot greenText"></span> Lagt p&#229;
+			</td>
+			<td>45661396</td>
+			<td><time datetime="2015-01-01 09:00:00">09:00:00</time></td>
+			<td>Caoimhin O Murchu 
+			<br />Fagerlia 27D, 
+			<br />0667 Oslo
+			</td>
+			<td>
+			<button type="button" class="border2px"><span class="icon-location"></span>Vis i kart</button><button type="button" class="border2px"> Besvar</button><button type="button" class="border2px"> Loggf&#248;r</button>
+			</td>
+		</tr>
+<!-- -->

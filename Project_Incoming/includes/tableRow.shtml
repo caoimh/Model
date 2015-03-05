@@ -1,0 +1,18 @@
+<!-- -->
+		<tr>
+			<td>AKTIV</td>
+			<td>45661396</td>
+			<td>Caoimhin O Murchu</td>
+			<td>12:07:17</td>
+		</tr>
+		<tr>
+			<td colspan="4">
+			<input type="button" value="Besvar" />
+			<input type="button" value="Loggf&#248;r" />		
+			<div style="display: inline;"><a href="" class="showHide">Vis adresse p&#229; kart</a></div>
+			<div class="mapBox">
+			This is the mapBox
+			</div>
+			</td>
+		</tr>
+<!-- -->

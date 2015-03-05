@@ -1,0 +1,21 @@
+/*-- TABS --*/
+
+button[role=tab]{
+
+padding:1em;
+text-decoration:none;
+border:0px;
+margin-right: 1px!important;
+background-color: $superLightGrey;
+color: $darkGrey;
+}
+
+button[role=tab]:hover {
+background-color: $mediumGrey;
+color: $white;
+}
+
+button[role=tab].active { /*--NB! Class--*/
+background-color:$darkGrey;
+color : $yellow;
+}

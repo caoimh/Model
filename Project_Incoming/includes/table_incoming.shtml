@@ -1,0 +1,36 @@
+
+	<button role="tab" class="active border2px">Innkommende</button><button role="tab" class="border2px"> Sl&#229; opp</button>
+
+<table class="incoming">
+<!--<caption>
+Innkommende
+</caption>-->
+<thead>
+<tr>
+<th>Status</th>
+<th>Nummer</th>
+<th>Tid</th>
+<th>Navn, Adresse</th>
+<th></th>
+</tr>
+</thead>
+
+<tfoot style="display: none;">
+<tr>
+<th>Status</th>
+<th>Nummer</th>
+<th>Tid</th>
+<th>Navn, Adresse</th>
+<th></th>
+</tr>
+</tfoot>
+<tbody>
+<!--#include virtual="tableRow_v2.shtml" -->
+<!--#include virtual="tableRow_v3.shtml" -->
+<!-- #include virtual="errorRow.shtml" -->
+<!--#include virtual="tableRow_v2.shtml" -->
+<!--#include virtual="tableRow_v4.shtml" -->
+<!--#include virtual="tableRow_v2.shtml" -->
+<!--#include virtual="tableRow_v2.shtml" -->
+</tbody>
+</table>

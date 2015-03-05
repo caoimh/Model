@@ -1,0 +1,15 @@
+<!-- -->
+		<tr>
+			<td><span class="icon-dot greenText"></span>Aktiv
+			</td>
+			<td>45661396</td>
+			<td><time datetime="2015-01-01 09:00:00">09:00:00</time></td>
+			<td>Caoimhin O Murchu 
+			<br />Fagerlia 27D, 
+			<br />0667 Oslo
+			</td>
+			<td>
+			<button type="button" class="green"><span class="icon-location"></span>Vis i kart</button><button type="button" class="green"><span class="icon-phone"></span>Besvar</button><button type="button" class="green"> Loggf&#248;r</button>
+			</td>
+		</tr>
+<!-- -->

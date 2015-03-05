@@ -1,0 +1,11 @@
+
+<button role="tab" class="active border2px">Innkommende</button><button role="tab" class="border2px"> Sl&#229; opp</button>
+
+<table class="incoming">
+
+<tbody>
+<!--#include virtual="stackedRow.shtml" -->
+<!--#include virtual="stackedRow.shtml" -->
+<!--#include virtual="stackedRow.shtml" -->
+</tbody>
+</table>
